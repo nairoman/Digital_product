@@ -1,0 +1,175 @@
+
+
+/*-------------------------------------------------------------Variables------*/
+:root{ /*para declarar variales dentro de css*/
+  --blue-color:#04C0D0;
+  --white-color: white;
+  --black-color: black;
+  /*Tipografía*/
+  --normal: 12px;
+  /*Espaciado*/
+  --space: 10px;
+  /*Box Shadow*/
+  --box: 0 0 1px #afadad;
+}
+/*-------------------------------------------------------------Variables------*/
+
+
+html,body{
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--normal);
+  font-family: helvetica;
+}
+
+nav{
+  display: flex; /* para colocar un elemento al lado del otro */
+  background-color: var(--blue-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between; /*separa los elementos del navbar*/
+  align-items: center; /*alinea mis elementos del navbar*/
+}
+
+p,label{
+  font-size: var(--normal);
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left:20px;/*espacio izquierda entre elementos*/
+  list-style: none; /*para quitar las bolitas de las listas*/
+}
+
+nav li a{
+  color: var(--white-color);
+  text-decoration: none; /*para quitar lo subrayado de la palabra*/
+}
+
+nav li a:hover{
+  color: var(--black-color);
+}
+
+/*-----------------------MAIN SECTION ------------------*/
+
+.main_section{
+  padding: 20px; /*en este caso espacio entre el navbar y el texto que viene*/
+  text-align: center;
+}
+
+.products{
+  background-image: url("../images/curve.png");
+  height: 80px;
+  background-size: cover; /*ocupa el tamaño del div que tiene*/
+  background-position: center top; /*se alinea hacia el centro arriba*/
+  padding: 20%;
+  display: flex;
+}
+
+.product{
+  padding: var(--space); /*divide con 10pixeles un elemento del otro*/
+  margin-top: -190px;
+}
+
+.product .content{
+  background-color: var(--white-color);
+  padding: 15px;
+  text-align: center;
+  box-shadow: var(--box) /*generar sombra a los elementos*/
+}
+
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: var(--blue-color);
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  color:var(--white-color);
+  border: none
+  cursor: pointer; /*para poner la manito cuando me paro sobre el botón*/
+  border-radius: 5px;
+}
+
+.main_button:hover{
+  background-color: #4d959b;
+}
+
+.benefits{
+  background-size: cover;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.benefit{
+  font-size: var(--normal);
+  text-align: center;
+  vertical-align: text-bottom;
+  padding-top: var(--space);
+}
+
+.benefit_p{
+  max-width: 200px;
+}
+
+.main_mentions{
+  font-size: 20px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.mentions{
+  display: flex;
+  padding: var(--space);
+  text-align: center;
+  justify-content: space-around;
+}
+
+.mention{
+  box-shadow: var(--box);
+  padding-left: var(--space);
+  padding: 15px;
+  justify-content: space-around; /*alinea los elementos con espacio antes, después y entre ellos*/
+}
+
+.igma_content{
+  text-align: center;
+  width: 240px;
+}
+
+/*--------------------- Venta -----------------*/
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+
+.modulo_pago_images{
+  max-width: 150px; /*maximo ancho*/
+  text-align: center; /*centrar imagen*/
+  margin: auto;
+}
+
+.data{
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;/*desde donde toma referencia el ancho dle marco*/
+}
+
+.modulo_pago .main_button{
+  margin-top: 10px;
+}
+
+/*---------------------- Footer -----------------*/
+.contact a{
+  color: var(--black-color);
+}
